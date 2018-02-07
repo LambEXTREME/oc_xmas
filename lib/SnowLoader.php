@@ -45,7 +45,7 @@ class SnowLoader {
 			'true') === 'true';
 
 		// If requested, and condition matches, go snow!
-                if(date('md', time()) == '214') {
+                if(date('md', time()) == '214' || true) {
         		if(
 	        		($showOnLogin && $this->isLogin())
 		        	|| ($showOnPublicShare && $this->isPublicShare()
@@ -53,7 +53,8 @@ class SnowLoader {
         			$this->goSnow();
                         }
 		}
-                if(date('md', time()) > '1223' && date('md', time()) < '1227' || true) {
+                if(date('md', time()) > '1223' && date('md', time()) < '1227') {
+                        if(
                                 ($showOnLogin && $this->isLogin())
                                 || ($showOnPublicShare && $this->isPublicShare()
                                 || ($showOnFiles && $this->isFilesApp()))) {
